@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="143" />
+   <irq preferredWidth="79" />
+   <name preferredWidth="293" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Project,Library/Interface Protocols,Library/Memory Interfaces and Controllers,Library,Library/Memory Interfaces and Controllers/Flash" />
+ <window width="1100" height="728" x="0" y="0" />
+ <generation
+   simulation="VERILOG"
+   block_symbol_file="0"
+   greybox="0"
+   synthesis="VERILOG" />
+</preferences>

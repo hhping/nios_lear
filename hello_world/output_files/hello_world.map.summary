@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Sun Aug 12 11:31:33 2018
+Quartus II 64-Bit Version : 14.1.0 Build 186 12/03/2014 SJ Full Version
+Revision Name : hello_world
+Top-level Entity Name : hello_world
+Family : Cyclone IV GX
+Total logic elements : 3,990
+    Total combinational functions : 3,225
+    Dedicated logic registers : 2,217
+Total registers : 2217
+Total pins : 8
+Total virtual pins : 0
+Total memory bits : 727,296
+Embedded Multiplier 9-bit elements : 6
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 1

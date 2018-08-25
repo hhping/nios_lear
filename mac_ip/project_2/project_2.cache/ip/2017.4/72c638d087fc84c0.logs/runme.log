@@ -1,0 +1,829 @@
+
+*** Running vivado
+    with args -log ten_gig_eth_mac_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ten_gig_eth_mac_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source ten_gig_eth_mac_0.tcl -notrace
+Command: synth_design -top ten_gig_eth_mac_0 -part xq7k410trf900-2IL -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xq7k410t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xq7k410t'
+INFO: [Common 17-1540] The version limit for your license is '2017.12' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11724 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 417.297 ; gain = 107.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ten_gig_eth_mac_0' [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0.v:59]
+INFO: [Synth 8-638] synthesizing module 'ten_gig_eth_mac_0_block' [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_block.v:64]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "true" *) [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_block.v:70]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "true" *) [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_block.v:72]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "true" *) [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_block.v:74]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "true" *) [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_block.v:76]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "true" *) [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_block.v:79]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "true" *) [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_block.v:81]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "true" *) [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_block.v:88]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "true" *) [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_block.v:90]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "true" *) [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_block.v:92]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "true" *) [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_block.v:94]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "true" *) [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_block.v:96]
+INFO: [Synth 8-638] synthesizing module 'ten_gig_eth_mac_0_xgmii_if' [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_xgmii_if.v:61]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "true" *) [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_xgmii_if.v:76]
+INFO: [Synth 8-638] synthesizing module 'IDDR' [F:/vivado2017install_new/Vivado/2017.4/scripts/rt/data/unisim_comp.v:21382]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IDDR' (36#1) [F:/vivado2017install_new/Vivado/2017.4/scripts/rt/data/unisim_comp.v:21382]
+INFO: [Synth 8-638] synthesizing module 'ODDR' [F:/vivado2017install_new/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30648]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-256] done synthesizing module 'ODDR' (37#1) [F:/vivado2017install_new/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30648]
+INFO: [Synth 8-638] synthesizing module 'ODDR__parameterized0' [F:/vivado2017install_new/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30648]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-256] done synthesizing module 'ODDR__parameterized0' (37#1) [F:/vivado2017install_new/Vivado/2017.4/scripts/rt/data/unisim_comp.v:30648]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [F:/vivado2017install_new/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19468]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (38#1) [F:/vivado2017install_new/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19468]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_BASE' [F:/vivado2017install_new/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25877]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 6.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 6.400000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 6.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 180.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_BASE' (39#1) [F:/vivado2017install_new/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25877]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [F:/vivado2017install_new/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (40#1) [F:/vivado2017install_new/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+WARNING: [Synth 8-6014] Unused sequential element rx_dcm_locked_reg_reg was removed.  [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_xgmii_if.v:145]
+INFO: [Synth 8-256] done synthesizing module 'ten_gig_eth_mac_0_xgmii_if' (41#1) [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_xgmii_if.v:61]
+INFO: [Synth 8-256] done synthesizing module 'ten_gig_eth_mac_0_block' (42#1) [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_block.v:64]
+INFO: [Synth 8-256] done synthesizing module 'ten_gig_eth_mac_0' (43#1) [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0.v:59]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_0_xgmii_if has unconnected port rx_axis_rstn
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_info has unconnected port rx_axis_reset
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_info has unconnected port frame_counter[12]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_info has unconnected port rx_control[7]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_info has unconnected port rx_control[6]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_info has unconnected port rx_control[5]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_info has unconnected port rx_control[4]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_info has unconnected port rx_control[3]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_info has unconnected port rx_control[2]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_info has unconnected port rx_control[1]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_info has unconnected port rx_control[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_info has unconnected port end_lane[7]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_info has unconnected port late_data_cycle[1]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_info has unconnected port unicast_addr_frame
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_info has unconnected port special_addr_frame
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_info has unconnected port pause_opcode
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_info has unconnected port pfc_opcode
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_user has unconnected port sequence_seen_lo
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_detect has unconnected port rx_axis_reset
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_detect has unconnected port xgmii_rxc[7]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_detect has unconnected port xgmii_rxc[6]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_detect has unconnected port xgmii_rxc[5]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_detect has unconnected port xgmii_rxc[4]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_detect has unconnected port xgmii_rxc[3]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_detect has unconnected port xgmii_rxc[2]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_detect has unconnected port xgmii_rxc[1]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_detect has unconnected port late_data_cycle[1]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_detect has unconnected port end_lane[7]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_detect has unconnected port shift_control[3]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_detect has unconnected port shift_control[2]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_detect has unconnected port shift_control[1]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_detect has unconnected port frame_counter[12]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_detect has unconnected port frame_counter[11]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_detect has unconnected port frame_counter[10]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_detect has unconnected port frame_counter[9]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_control has unconnected port pfc_priority_enable[7]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_control has unconnected port pfc_priority_enable[6]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_control has unconnected port pfc_priority_enable[5]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_control has unconnected port pfc_priority_enable[4]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_control has unconnected port pfc_priority_enable[3]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_control has unconnected port pfc_priority_enable[2]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_control has unconnected port pfc_priority_enable[1]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_control has unconnected port pfc_priority_enable[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_control has unconnected port pfc_tready[7]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_control has unconnected port pfc_tready[6]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_control has unconnected port pfc_tready[5]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_control has unconnected port pfc_tready[4]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_control has unconnected port pfc_tready[3]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_control has unconnected port pfc_tready[2]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_control has unconnected port pfc_tready[1]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_control has unconnected port pfc_tready[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rx_axis_reset
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rx_control[7]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rx_control[6]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rx_control[5]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rx_control[4]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rx_control[3]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rx_control[2]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rxd_pipe0[63]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rxd_pipe0[62]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rxd_pipe0[61]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rxd_pipe0[60]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rxd_pipe0[59]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rxd_pipe0[58]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rxd_pipe0[57]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rxd_pipe0[56]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rxd_pipe0[55]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rxd_pipe0[54]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rxd_pipe0[53]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rxd_pipe0[52]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rxd_pipe0[51]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rxd_pipe0[50]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rxd_pipe0[49]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_decode_64bit has unconnected port rxd_pipe0[48]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_size has unconnected port rx_axis_reset
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_crc has unconnected port rx_axis_reset
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_config_sync has unconnected port rx_axis_clk_enable
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_config_sync has unconnected port pfc_enable
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_config_sync has unconnected port pfc_priority_enable[7]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_config_sync has unconnected port pfc_priority_enable[6]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_config_sync has unconnected port pfc_priority_enable[5]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_config_sync has unconnected port pfc_priority_enable[4]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_config_sync has unconnected port pfc_priority_enable[3]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_config_sync has unconnected port pfc_priority_enable[2]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_config_sync has unconnected port pfc_priority_enable[1]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_config_sync has unconnected port pfc_priority_enable[0]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_config_sync has unconnected port rx_inline_ts
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_64bit has unconnected port tod_timer_s[47]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_64bit has unconnected port tod_timer_s[46]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_64bit has unconnected port tod_timer_s[45]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_64bit has unconnected port tod_timer_s[44]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_64bit has unconnected port tod_timer_s[43]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_64bit has unconnected port tod_timer_s[42]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_64bit has unconnected port tod_timer_s[41]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_64bit has unconnected port tod_timer_s[40]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_64bit has unconnected port tod_timer_s[39]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_64bit has unconnected port tod_timer_s[38]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_64bit has unconnected port tod_timer_s[37]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_64bit has unconnected port tod_timer_s[36]
+WARNING: [Synth 8-3331] design ten_gig_eth_mac_v15_1_4_rx_64bit has unconnected port tod_timer_s[35]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 538.332 ; gain = 228.316
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 538.332 ; gain = 228.316
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xq7k410trf900-2IL
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ten_gig_eth_mac_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ten_gig_eth_mac_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Administrator/Desktop/mac_ip/project_2/project_2.runs/ten_gig_eth_mac_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/mac_ip/project_2/project_2.runs/ten_gig_eth_mac_0_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_clocks.xdc] for cell 'inst'
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'xgmii_rx_clk' matched to 'clock' objects. [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_clocks.xdc:8]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'xgmii_rx_clk' matched to 'clock' objects. [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_clocks.xdc:9]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_clocks.xdc:11]
+WARNING: [Designutils 20-1567] Use of 'set_false_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_clocks.xdc:12]
+Finished Parsing XDC File [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_clocks.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0_clocks.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ten_gig_eth_mac_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ten_gig_eth_mac_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.134 . Memory (MB): peak = 945.621 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:58 ; elapsed = 00:01:07 . Memory (MB): peak = 945.621 ; gain = 635.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xq7k410trf900-2IL
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:58 ; elapsed = 00:01:07 . Memory (MB): peak = 945.621 ; gain = 635.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+WARNING: set_property IOB could not find object (constraint file  c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0.xdc, line 81).
+WARNING: set_property IOB could not find object (constraint file  c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0.xdc, line 82).
+Applied set_property IOB = TRUE for inst/xgmac_xgmii_if/tx_clk_ddr. (constraint file  c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0.xdc, line 83).
+WARNING: set_property IOB could not find object (constraint file  c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0.xdc, line 86).
+WARNING: set_property IOB could not find object (constraint file  c:/Users/Administrator/Desktop/mac_ip/project_2/project_2.srcs/sources_1/ip/ten_gig_eth_mac_0/synth/ten_gig_eth_mac_0.xdc, line 89).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/Administrator/Desktop/mac_ip/project_2/project_2.runs/ten_gig_eth_mac_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:07 . Memory (MB): peak = 945.621 ; gain = 635.605
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "inc_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fast_counter_read" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "inc_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fast_counter_read" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "tx_group1_addr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_group1_addr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_group3_addr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_group3_addr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_group5_addr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_group5_addr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_write_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_write_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_write_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_tx_update_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_tx_update_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inc_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fast1_counter_read" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fast2_counter_read" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fast3_counter_read" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "inc_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fast1_counter_read" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fast2_counter_read" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fast3_counter_read" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rx_write_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_group1_addr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_group1_addr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_group3_addr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_group3_addr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_group4_addr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_group4_addr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_group5_addr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_write_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_write_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_rx_update_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_rx_update_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mem_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tx" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rs" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mtu_rx" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mtu_tx" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pause_addr_hi" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ma" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ma_cntl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mdio_wr_data_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "update_rx0_tog" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "update_rx_tog" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "update_tx_tog" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "update_fc_tog" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "update_mtu_rx_tog" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "update_mtu_tx_tog" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "isr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ier" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ipr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "PAUSE64.LEGACY_MEM.mem2". This will be implemented in logic
+INFO: [Synth 8-5544] ROM "seq_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seq_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seq_cnt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "col_cnt" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_wr_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_waiting_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_wr_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_waiting_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_wr_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_wr_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_rd_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "prev_rd_state_p" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "prev_rd_state_i_p" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "prev_rd_state_r_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "crc_position_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "insert_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "insert_next" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "position_final" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_data_d1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_data_d1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_data_d1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_data_d1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "xgmii_cntl" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "xgmii_cntl" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "xgmii_cntl" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "xgmii_cntl" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "xgmii_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "xgmii_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "dic_required" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dic_returned" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "local_ifg_count" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "poss_ifg_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "broadcast_frame" won't be mapped to RAM because address size (48) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "control_frame" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frame_size" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frame_size" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "byte_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "byte_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "final_byte_count" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "broadcast_frame" won't be mapped to RAM because address size (48) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "control_frame" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frame_size" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frame_size" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "byte_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "byte_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "final_byte_count" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "frame_size" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'legacy_state_reg' in module 'ten_gig_eth_mac_v15_1_4_pfc_tx_cntl'
+INFO: [Synth 8-5544] ROM "pause_req" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pfc_req_int" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pfc_valid" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_legacy_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pause_sample_addr_int" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pause_tvalid" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pause_tdata" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_int_reg' in module 'ten_gig_eth_mac_v15_1_4_rx_fsm'
+INFO: [Synth 8-5544] ROM "rxc_position" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxc_position" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "crc_valid_int" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "crc_valid_int" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "crc_valid_int" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "crc_valid_int" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "rx_state_validate_lch" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "frame_max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "broadcast_detect" won't be mapped to RAM because address size (48) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "broadcast_frame" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "control_frame_any_add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pause_opcode" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pfc_opcode" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "special_addr_frame" won't be mapped to RAM because address size (48) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "vlan_frame" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "early_truncate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "early_truncate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'pause_state_reg' in module 'ten_gig_eth_mac_v15_1_4_rx_control'
+INFO: [Synth 8-5544] ROM "pause_quanta" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pause_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "valid_frame_size_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "length_error_non_word_boundary" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "length_error_lt_gt_payload" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "valid_frame_size_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "length_error_non_word_boundary" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "length_error_lt_gt_payload" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "start_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_axis_tlast_int" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "start_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_axis_tlast_int" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_axis_tkeep" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_axis_tkeep" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_was_v" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_was_v_long" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_was_v" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_was_v_long" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bytes_valid" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                              000
+                     REQ |                             0010 |                              001
+                    WAIT |                             0100 |                              010
+                   COUNT |                             1000 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'legacy_state_reg' using encoding 'one-hot' in module 'ten_gig_eth_mac_v15_1_4_pfc_tx_cntl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+               CHECK_MIN |                              001 |                              001
+                    DATA |                              010 |                              010
+               BAD_STRIP |                              011 |                              011
+                VALIDATE |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_int_reg' using encoding 'sequential' in module 'ten_gig_eth_mac_v15_1_4_rx_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                              000
+                  LEGACY |                            00010 |                              001
+                     PFC |                            00100 |                              100
+                PFCQ3_Q6 |                            01000 |                              101
+                   PFCQ7 |                            10000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pause_state_reg' using encoding 'one-hot' in module 'ten_gig_eth_mac_v15_1_4_rx_control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:11 ; elapsed = 00:01:21 . Memory (MB): peak = 945.621 ; gain = 635.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1540 (col length:140)
+BRAMs: 1590 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5587] ROM size for "p_0_out" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "poss_ifg_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dic_required" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dic_returned" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frame_size" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "control_frame" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "broadcast_frame" won't be mapped to RAM because address size (48) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "crc_valid_int" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "crc_valid_int" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "crc_valid_int" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "crc_valid_int" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "frame_max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "broadcast_detect" won't be mapped to RAM because address size (48) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/rx_stats/rx_group3_addr_reg[4]' (FDSE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/rx_stats/rx_group3_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/rx_stats/rx_group1_addr_reg[4]' (FDSE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/rx_stats/rx_group1_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/rx_stats/rx_group4_addr_reg[5]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/rx_stats/rx_group4_addr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/rx_stats/rx_group3_addr_reg[5]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/rx_stats/rx_group3_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/rx_stats/rx_group1_addr_reg[5]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/rx_stats/rx_group1_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/rx_stats/rx_group4_addr_reg[2]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/rx_stats/rx_group4_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/rx_stats/rx_group1_addr_reg[2]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/rx_stats/rx_group1_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/rx_stats/rx_group3_addr_reg[3]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/rx_stats/rx_group3_addr_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.USE_STATS.statistics/rx_stats/rx_group4_addr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.USE_STATS.statistics/rx_stats/rx_group3_addr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group5_addr_reg[4]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group5_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group4_addr_reg[4]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group4_addr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group3_addr_reg[4]' (FDSE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group3_addr_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group1_addr_reg[4]' (FDSE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group1_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group3_addr_reg[5]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group3_addr_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.USE_STATS.statistics/tx_stats/tx_group1_addr_reg[5] )
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group5_addr_reg[2]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group5_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group4_addr_reg[2]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group4_addr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group3_addr_reg[2]' (FDSE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group3_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.USE_STATS.statistics/tx_stats/tx_group5_addr_reg[3] )
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group4_addr_reg[3]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group4_addr_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group1_addr_reg[3]' (FDSE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group1_addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group4_addr_reg[0]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.USE_STATS.statistics/tx_stats/tx_group4_addr_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.USE_STATS.statistics/tx_stats/tx_group3_addr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/quanta_low_hold_reg[6]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/quanta_low_hold_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/quanta_low_hold_reg[2]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/quanta_low_hold_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/pfc_tx_cntl/pfc_valid_reg[0]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/pfc_tx_cntl/pfc_valid_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/pfc_tx_cntl/pfc_valid_reg[1]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/pfc_tx_cntl/pfc_valid_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/pfc_tx_cntl/pfc_valid_reg[2]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/pfc_tx_cntl/pfc_valid_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/pfc_tx_cntl/pfc_valid_reg[3]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/pfc_tx_cntl/pfc_valid_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/pfc_tx_cntl/pfc_valid_reg[4]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/pfc_tx_cntl/pfc_valid_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/pfc_tx_cntl/pfc_valid_reg[5]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/pfc_tx_cntl/pfc_valid_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/pfc_tx_cntl/pfc_valid_reg[6]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/pfc_tx_cntl/pfc_valid_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/tx/pfc_tx_cntl/\pfc_valid_reg[7] )
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_mux_1/frame_ctrl_reg[4]' (FD) to 'inst/ten_gig_eth_mac_0_core/tx/tx_mux_1/frame_ctrl_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_mux_1/frame_ctrl_reg[5]' (FD) to 'inst/ten_gig_eth_mac_0_core/tx/tx_mux_1/frame_ctrl_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_mux_1/frame_ctrl_reg[1]' (FD) to 'inst/ten_gig_eth_mac_0_core/tx/tx_mux_1/frame_ctrl_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_mux_1/frame_ctrl_reg[6]' (FD) to 'inst/ten_gig_eth_mac_0_core/tx/tx_mux_1/frame_ctrl_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_mux_1/frame_ctrl_reg[2]' (FD) to 'inst/ten_gig_eth_mac_0_core/tx/tx_mux_1/frame_ctrl_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_mux_1/frame_ctrl_reg[7]' (FD) to 'inst/ten_gig_eth_mac_0_core/tx/tx_mux_1/frame_ctrl_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/quanta_low_hold_reg[7]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/quanta_low_hold_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/quanta_low_hold_reg[3]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/quanta_low_hold_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/quanta_low_hold_reg[4]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/quanta_low_hold_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/quanta_low_hold_reg[0]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/quanta_low_hold_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/quanta_low_hold_reg[5]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/quanta_low_hold_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/tx/tx_cntl/\quanta_low_hold_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[0]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/ts_adj_reg[0]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[1]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/ts_adj_reg[1]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[2]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/ts_adj_reg[2]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[3]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/ts_adj_reg[3]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[4]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/ts_adj_reg[4]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/ts_adj_reg[5]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[5]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[6]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/ts_adj_reg[6]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[7]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/ts_adj_reg[7]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/ts_adj_reg[8]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[8]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[9]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/ts_adj_reg[9]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[10]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/ts_adj_reg[10]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[11]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/ts_adj_reg[11]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[12]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/ts_adj_reg[12]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[13]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/ts_adj_reg[13]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[14]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/ts_adj_reg[14]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/ts_adj_reg[15]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[15]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/ts_adj_reg[16]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[16]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[17]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[18]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[19]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[20]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.register_block/ma_cntl_reg[21] )
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[21]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.register_block/ma_cntl_reg[22] )
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[22]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.register_block/rx1_reg[22] )
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[22]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.register_block/ma_cntl_reg[23] )
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[23]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[24]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[25]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/pfc_reg[26]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/tx_reg[26]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.register_block/tx_reg[26] )
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[46]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[47]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[47]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[45]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[45]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[44]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[44]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[42]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[34]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[42]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[42]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[41]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[41]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[32]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[38]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[38]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[37]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[37]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[36]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[36]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[33]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/tx/tx_cntl/\pause_tdata_reg[33] )
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[43]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[35]' (FDE) to 'inst/ten_gig_eth_mac_0_core/tx/tx_cntl/pause_tdata_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/mdio_data_out_reg[29]' (FD) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/mdio_data_out_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/mdio_data_out_reg[30]' (FD) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/mdio_data_out_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.register_block/mdio_data_out_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/tx/pfc_tx_cntl/pfc_req_int_reg)
+INFO: [Synth 8-3886] merging instance 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/axi_rresp_reg[0]' (FDRE) to 'inst/ten_gig_eth_mac_0_core/control_block/USE_MAN.register_block/axi_rresp_reg[1]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.USE_STATS.statistics/s_axi_rresp_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.register_block/axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.axi_lite_mux/undef_axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.USE_STATS.statistics/s_axi_bresp_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.register_block/axi_bresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.axi_lite_mux/undef_axi_bresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/rx/\rx_pause_control/valid_pfc_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/rx/\rx_info/stats_vector_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/tx/tx_cntl/\pause_stats_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.register_block/mdio_data_out_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/ten_gig_eth_mac_0_core/control_block/\USE_MAN.USE_STATS.statistics/rx_stats/rx_group5_addr_reg[5] )
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.register_block/rx1_reg[22]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.USE_STATS.statistics/tx_stats/tx_group1_addr_reg[5]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.USE_STATS.statistics/tx_stats/tx_group3_addr_reg[1]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.USE_STATS.statistics/tx_stats/tx_group5_addr_reg[3]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.USE_STATS.statistics/tx_stats/tx_group5_addr_reg[1]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.USE_STATS.statistics/rx_stats/rx_group3_addr_reg[1]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.USE_STATS.statistics/rx_stats/rx_group4_addr_reg[0]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.USE_STATS.statistics/rx_stats/rx_group5_addr_reg[5]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.USE_STATS.statistics/s_axi_rresp_reg[0]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.USE_STATS.statistics/s_axi_bresp_reg[0]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.register_block/ma_cntl_reg[23]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.register_block/ma_cntl_reg[22]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.register_block/ma_cntl_reg[21]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.register_block/mdio_data_out_reg[23]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.axi_lite_mux/undef_axi_rresp_reg[1]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.axi_lite_mux/s_axi_rresp_reg[0]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.axi_lite_mux/undef_axi_bresp_reg[1]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.axi_lite_mux/s_axi_bresp_reg[0]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.register_block/axi_bresp_reg[1]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.register_block/axi_rresp_reg[1]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+WARNING: [Synth 8-3332] Sequential element (USE_MAN.register_block/tx_reg[26]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_management.
+INFO: [Synth 8-3332] Sequential element (col_cnt_reg[7]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_rs_64bit.
+INFO: [Synth 8-3332] Sequential element (col_cnt_reg[0]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_rs_64bit.
+INFO: [Synth 8-3332] Sequential element (seq_cnt_reg[2]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_rs_64bit.
+INFO: [Synth 8-3332] Sequential element (tx_config_sync/MAN_USED.enable_wan_cap_reg) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_tx_64bit.
+INFO: [Synth 8-3332] Sequential element (tx_config_sync/MAN_USED.enable_wan_int_reg) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_tx_64bit.
+INFO: [Synth 8-3332] Sequential element (idle_mux_now_reg[0]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_tx_crc_control.
+INFO: [Synth 8-3332] Sequential element (idle_mux_now_d1_reg[0]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_tx_mux_final.
+INFO: [Synth 8-3332] Sequential element (pfc_req_int_reg) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_pfc_tx_cntl.
+INFO: [Synth 8-3332] Sequential element (pfc_valid_reg[7]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_pfc_tx_cntl.
+INFO: [Synth 8-3332] Sequential element (pfc_frame_reg) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_tx_pause_cntl.
+INFO: [Synth 8-3332] Sequential element (quanta_low_hold_reg[1]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_tx_pause_cntl.
+INFO: [Synth 8-3332] Sequential element (pfc_valid_hold_reg[7]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_tx_pause_cntl.
+INFO: [Synth 8-3332] Sequential element (pfc_valid_hold_reg[6]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_tx_pause_cntl.
+INFO: [Synth 8-3332] Sequential element (pfc_valid_hold_reg[5]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_tx_pause_cntl.
+INFO: [Synth 8-3332] Sequential element (pfc_valid_hold_reg[4]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_tx_pause_cntl.
+INFO: [Synth 8-3332] Sequential element (pfc_valid_hold_reg[3]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_tx_pause_cntl.
+INFO: [Synth 8-3332] Sequential element (pfc_valid_hold_reg[2]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_tx_pause_cntl.
+INFO: [Synth 8-3332] Sequential element (pfc_valid_hold_reg[1]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_tx_pause_cntl.
+INFO: [Synth 8-3332] Sequential element (pfc_valid_hold_reg[0]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_tx_pause_cntl.
+INFO: [Synth 8-3332] Sequential element (pause_tdata_reg[33]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_tx_pause_cntl.
+INFO: [Synth 8-3332] Sequential element (pause_stats_reg[1]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_tx_pause_cntl.
+INFO: [Synth 8-3332] Sequential element (rx_fsm/end_lane_reg[7]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_rx_64bit.
+INFO: [Synth 8-3332] Sequential element (rx_decode/pfc_opcode_reg) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_rx_64bit.
+INFO: [Synth 8-3332] Sequential element (rx_pause_control/valid_pfc_reg) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_rx_64bit.
+INFO: [Synth 8-3332] Sequential element (rx_info/stats_vector_reg[30]) is unused and will be removed from module ten_gig_eth_mac_v15_1_4_rx_64bit.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:47 ; elapsed = 00:01:59 . Memory (MB): peak = 945.621 ; gain = 635.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:05 ; elapsed = 00:02:17 . Memory (MB): peak = 945.621 ; gain = 635.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:09 ; elapsed = 00:02:22 . Memory (MB): peak = 969.371 ; gain = 659.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:15 ; elapsed = 00:02:28 . Memory (MB): peak = 1044.844 ; gain = 734.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:17 ; elapsed = 00:02:30 . Memory (MB): peak = 1044.844 ; gain = 734.828
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:18 ; elapsed = 00:02:30 . Memory (MB): peak = 1044.844 ; gain = 734.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:19 ; elapsed = 00:02:32 . Memory (MB): peak = 1044.844 ; gain = 734.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:19 ; elapsed = 00:02:32 . Memory (MB): peak = 1044.844 ; gain = 734.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:19 ; elapsed = 00:02:32 . Memory (MB): peak = 1044.844 ; gain = 734.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:19 ; elapsed = 00:02:32 . Memory (MB): peak = 1044.844 ; gain = 734.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     2|
+|2     |CARRY4      |    71|
+|3     |IDDR        |    36|
+|4     |LUT1        |    50|
+|5     |LUT2        |   279|
+|6     |LUT3        |   489|
+|7     |LUT4        |   477|
+|8     |LUT5        |   542|
+|9     |LUT6        |  1480|
+|10    |MMCME2_BASE |     1|
+|11    |MUXF7       |    55|
+|12    |ODDR        |    33|
+|13    |ODDR_1      |     4|
+|14    |RAM32M      |    15|
+|15    |RAM64M      |    44|
+|16    |SRL16E      |    16|
+|17    |FDPE        |    15|
+|18    |FDRE        |  2837|
+|19    |FDSE        |   193|
+|20    |IBUF        |     1|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:19 ; elapsed = 00:02:32 . Memory (MB): peak = 1044.844 ; gain = 734.828
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1337 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:36 ; elapsed = 00:02:07 . Memory (MB): peak = 1044.844 ; gain = 327.539
+Synthesis Optimization Complete : Time (s): cpu = 00:02:20 ; elapsed = 00:02:32 . Memory (MB): peak = 1044.844 ; gain = 734.828
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 260 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 60 instances were transformed.
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 15 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 44 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+369 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:26 ; elapsed = 00:02:41 . Memory (MB): peak = 1044.844 ; gain = 734.828
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Administrator/Desktop/mac_ip/project_2/project_2.runs/ten_gig_eth_mac_0_synth_1/ten_gig_eth_mac_0.dcp' has been generated.

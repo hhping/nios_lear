@@ -1,0 +1,245 @@
+Info: Starting: Create simulation model
+Info: ip-generate --project-directory=C:\Users\Administrator\Desktop\nios\hello_world\nios_core --output-directory=C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel\simulation --file-set=SIM_VERILOG --report-file=html:C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel\kernel.html --report-file=sopcinfo:C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel.sopcinfo --report-file=csv:C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel\kernel.csv --report-file=spd:C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel\kernel.spd --report-file=cmp:C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel\kernel.cmp --report-file=sip:C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel\simulation\kernel.sip --system-info=DEVICE_FAMILY="Cyclone IV GX" --system-info=DEVICE=EP4CGX150DF27C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel.qsys --remove-qsys-generate-warning
+Progress: Loading nios_core/kernel.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 14.1]
+Progress: Parameterizing module clk
+Progress: Adding cpu [altera_nios2_gen2 14.1]
+Progress: Parameterizing module cpu
+Progress: Adding epcs [altera_avalon_epcs_flash_controller 14.1]
+Progress: Parameterizing module epcs
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 14.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding onchip_memory [altera_avalon_onchip_memory2 14.1]
+Progress: Parameterizing module onchip_memory
+Progress: Adding sdram_ctrl [altera_avalon_new_sdram_controller 14.1]
+Progress: Parameterizing module sdram_ctrl
+Progress: Adding sysid [altera_avalon_sysid_qsys 14.1]
+Progress: Parameterizing module sysid
+Progress: Adding uart [altera_avalon_uart 14.1]
+Progress: Parameterizing module uart
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: kernel.epcs: Dedicated AS interface is not supported, signals are exported to top level design.
+Info: kernel.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: kernel.sysid: Time stamp will be automatically updated when this component is generated.
+Info: kernel: Generating kernel "kernel" for SIM_VERILOG
+Warning: kernel: "No matching role found for epcs:epcs_control_port:dataavailable (dataavailable)"
+Warning: kernel: "No matching role found for epcs:epcs_control_port:endofpacket (endofpacket)"
+Warning: kernel: "No matching role found for epcs:epcs_control_port:readyfordata (readyfordata)"
+Warning: kernel: "No matching role found for uart:s1:dataavailable (dataavailable)"
+Warning: kernel: "No matching role found for uart:s1:readyfordata (readyfordata)"
+Info: cpu: "kernel" instantiated altera_nios2_gen2 "cpu"
+Info: epcs: Starting RTL generation for module 'kernel_epcs'
+Info: epcs:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_epcs_flash_controller -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_epcs_flash_controller/generate_rtl.pl --name=kernel_epcs --dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0001_epcs_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0001_epcs_gen//kernel_epcs_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0001_epcs_gen/  ]
+Info: epcs: Done RTL generation for module 'kernel_epcs'
+Info: epcs: "kernel" instantiated altera_avalon_epcs_flash_controller "epcs"
+Info: jtag_uart: Starting RTL generation for module 'kernel_jtag_uart'
+Info: jtag_uart:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=kernel_jtag_uart --dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0002_jtag_uart_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0002_jtag_uart_gen//kernel_jtag_uart_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0002_jtag_uart_gen/  ]
+Info: jtag_uart: Done RTL generation for module 'kernel_jtag_uart'
+Info: jtag_uart: "kernel" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: onchip_memory: Starting RTL generation for module 'kernel_onchip_memory'
+Info: onchip_memory:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=kernel_onchip_memory --dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0003_onchip_memory_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0003_onchip_memory_gen//kernel_onchip_memory_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0003_onchip_memory_gen/  ]
+Info: onchip_memory: Done RTL generation for module 'kernel_onchip_memory'
+Info: onchip_memory: "kernel" instantiated altera_avalon_onchip_memory2 "onchip_memory"
+Info: sdram_ctrl: Starting RTL generation for module 'kernel_sdram_ctrl'
+Info: sdram_ctrl:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=kernel_sdram_ctrl --dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0004_sdram_ctrl_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0004_sdram_ctrl_gen//kernel_sdram_ctrl_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0004_sdram_ctrl_gen/  ]
+Info: sdram_ctrl: Done RTL generation for module 'kernel_sdram_ctrl'
+Info: sdram_ctrl: "kernel" instantiated altera_avalon_new_sdram_controller "sdram_ctrl"
+Info: sysid: Generating Verilog simulation model
+Info: sysid: Generated simulation model kernel_sysid.vo
+Info: sysid: "kernel" instantiated altera_avalon_sysid_qsys "sysid"
+Info: uart: Starting RTL generation for module 'kernel_uart'
+Info: uart:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=kernel_uart --dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0008_uart_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0008_uart_gen//kernel_uart_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0008_uart_gen/  ]
+Info: uart: Done RTL generation for module 'kernel_uart'
+Info: uart: "kernel" instantiated altera_avalon_uart "uart"
+Info: mm_interconnect_0: "kernel" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "kernel" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "kernel" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'kernel_cpu_cpu'
+Info: cpu:   Generation command is [exec D:/altera/14.1/quartus/bin64/eperlcmd.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=kernel_cpu_cpu --dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0011_cpu_gen/ --quartus_bindir=D:/altera/14.1/quartus/bin64 --verilog --config=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0011_cpu_gen//kernel_cpu_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0011_cpu_gen/  ]
+Info: cpu: # 2018.08.23 22:17:06 (*) Starting Nios II generation
+Info: cpu: # 2018.08.23 22:17:06 (*)   Checking for plaintext license.
+Info: cpu: # 2018.08.23 22:17:08 (*)   Plaintext license not found.
+Info: cpu: # 2018.08.23 22:17:08 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2018.08.23 22:17:10 (*)   Encrypted license found.  SOF will not be time-limited.
+Info: cpu: # 2018.08.23 22:17:10 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2018.08.23 22:17:10 (*)   Creating all objects for CPU
+Info: cpu: # 2018.08.23 22:17:10 (*)     Testbench
+Info: cpu: # 2018.08.23 22:17:11 (*)     Instruction decoding
+Info: cpu: # 2018.08.23 22:17:11 (*)       Instruction fields
+Info: cpu: # 2018.08.23 22:17:11 (*)       Instruction decodes
+Info: cpu: # 2018.08.23 22:17:13 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2018.08.23 22:17:13 (*)       Instruction controls
+Info: cpu: # 2018.08.23 22:17:13 (*)     Pipeline frontend
+Info: cpu: # 2018.08.23 22:17:13 (*)     Pipeline backend
+Info: cpu: # 2018.08.23 22:17:19 (*)   Creating 'C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0011_cpu_gen//kernel_cpu_cpu_nios2_waves.do'
+Info: cpu: # 2018.08.23 22:17:19 (*)   Generating RTL from CPU objects
+Info: cpu: # 2018.08.23 22:17:26 (*)   Creating encrypted RTL
+Info: cpu: # 2018.08.23 22:17:28 (*)   Creating IP functional simulation model
+Info: cpu: # 2018.08.23 22:18:18 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'kernel_cpu_cpu'
+Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
+Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
+Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
+Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
+Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_008: "mm_interconnect_0" instantiated altera_merlin_router "router_008"
+Info: cpu_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "cpu_data_master_limiter"
+Info: Reusing file C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/simulation/submodules/altera_avalon_sc_fifo.v
+Info: sdram_ctrl_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "sdram_ctrl_s1_burst_adapter"
+Info: Reusing file C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/simulation/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/simulation/submodules/altera_merlin_arbitrator.sv
+Info: sdram_ctrl_s1_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "sdram_ctrl_s1_rsp_width_adapter"
+Info: Reusing file C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/simulation/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/simulation/submodules/altera_merlin_burst_uncompressor.sv
+Info: kernel: Done "kernel" with 33 modules, 76 files
+Info: ip-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel\kernel.spd --output-directory=C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel\kernel.spd --output-directory=C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	31 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: Finished: Create Modelsim Project.
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:\Users\Administrator\Desktop\nios\hello_world\nios_core --output-directory=C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel\synthesis --file-set=QUARTUS_SYNTH --report-file=html:C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel\kernel.html --report-file=sopcinfo:C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel.sopcinfo --report-file=cmp:C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel\kernel.cmp --report-file=qip:C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel\synthesis\kernel.qip --report-file=svd:C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel\synthesis\kernel.svd --report-file=regmap:C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel\synthesis\kernel.regmap --report-file=xml:C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel\kernel.xml --report-file=debuginfo:C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel\synthesis\kernel.debuginfo --system-info=DEVICE_FAMILY="Cyclone IV GX" --system-info=DEVICE=EP4CGX150DF27C7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=C:\Users\Administrator\Desktop\nios\hello_world\nios_core\kernel.qsys --remove-qsys-generate-warning --language=VERILOG
+Progress: Loading nios_core/kernel.qsys
+Progress: Reading input file
+Progress: Adding clk [clock_source 14.1]
+Progress: Parameterizing module clk
+Progress: Adding cpu [altera_nios2_gen2 14.1]
+Progress: Parameterizing module cpu
+Progress: Adding epcs [altera_avalon_epcs_flash_controller 14.1]
+Progress: Parameterizing module epcs
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 14.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding onchip_memory [altera_avalon_onchip_memory2 14.1]
+Progress: Parameterizing module onchip_memory
+Progress: Adding sdram_ctrl [altera_avalon_new_sdram_controller 14.1]
+Progress: Parameterizing module sdram_ctrl
+Progress: Adding sysid [altera_avalon_sysid_qsys 14.1]
+Progress: Parameterizing module sysid
+Progress: Adding uart [altera_avalon_uart 14.1]
+Progress: Parameterizing module uart
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: kernel.epcs: Dedicated AS interface is not supported, signals are exported to top level design.
+Info: kernel.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: kernel.sysid: Time stamp will be automatically updated when this component is generated.
+Info: kernel: Generating kernel "kernel" for QUARTUS_SYNTH
+Warning: kernel: "No matching role found for epcs:epcs_control_port:dataavailable (dataavailable)"
+Warning: kernel: "No matching role found for epcs:epcs_control_port:endofpacket (endofpacket)"
+Warning: kernel: "No matching role found for epcs:epcs_control_port:readyfordata (readyfordata)"
+Warning: kernel: "No matching role found for uart:s1:dataavailable (dataavailable)"
+Warning: kernel: "No matching role found for uart:s1:readyfordata (readyfordata)"
+Info: cpu: "kernel" instantiated altera_nios2_gen2 "cpu"
+Info: epcs: Starting RTL generation for module 'kernel_epcs'
+Info: epcs:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_epcs_flash_controller -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_epcs_flash_controller/generate_rtl.pl --name=kernel_epcs --dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0033_epcs_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0033_epcs_gen//kernel_epcs_component_configuration.pl  --do_build_sim=0  ]
+Info: epcs: Done RTL generation for module 'kernel_epcs'
+Info: epcs: "kernel" instantiated altera_avalon_epcs_flash_controller "epcs"
+Info: jtag_uart: Starting RTL generation for module 'kernel_jtag_uart'
+Info: jtag_uart:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=kernel_jtag_uart --dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0034_jtag_uart_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0034_jtag_uart_gen//kernel_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'kernel_jtag_uart'
+Info: jtag_uart: "kernel" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: onchip_memory: Starting RTL generation for module 'kernel_onchip_memory'
+Info: onchip_memory:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=kernel_onchip_memory --dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0035_onchip_memory_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0035_onchip_memory_gen//kernel_onchip_memory_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory: Done RTL generation for module 'kernel_onchip_memory'
+Info: onchip_memory: "kernel" instantiated altera_avalon_onchip_memory2 "onchip_memory"
+Info: sdram_ctrl: Starting RTL generation for module 'kernel_sdram_ctrl'
+Info: sdram_ctrl:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=kernel_sdram_ctrl --dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0036_sdram_ctrl_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0036_sdram_ctrl_gen//kernel_sdram_ctrl_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram_ctrl: Done RTL generation for module 'kernel_sdram_ctrl'
+Info: sdram_ctrl: "kernel" instantiated altera_avalon_new_sdram_controller "sdram_ctrl"
+Info: sysid: "kernel" instantiated altera_avalon_sysid_qsys "sysid"
+Info: uart: Starting RTL generation for module 'kernel_uart'
+Info: uart:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_uart/generate_rtl.pl --name=kernel_uart --dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0038_uart_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0038_uart_gen//kernel_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: uart: Done RTL generation for module 'kernel_uart'
+Info: uart: "kernel" instantiated altera_avalon_uart "uart"
+Info: mm_interconnect_0: "kernel" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "kernel" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "kernel" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'kernel_cpu_cpu'
+Info: cpu:   Generation command is [exec D:/altera/14.1/quartus/bin64/eperlcmd.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/altera/14.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=kernel_cpu_cpu --dir=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0041_cpu_gen/ --quartus_bindir=D:/altera/14.1/quartus/bin64 --verilog --config=C:/Users/ADMINI~1/AppData/Local/Temp/alt7766_3045874668003039563.dir/0041_cpu_gen//kernel_cpu_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2018.08.23 22:19:17 (*) Starting Nios II generation
+Info: cpu: # 2018.08.23 22:19:17 (*)   Checking for plaintext license.
+Info: cpu: # 2018.08.23 22:19:19 (*)   Plaintext license not found.
+Info: cpu: # 2018.08.23 22:19:19 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2018.08.23 22:19:22 (*)   Encrypted license found.  SOF will not be time-limited.
+Info: cpu: # 2018.08.23 22:19:22 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2018.08.23 22:19:22 (*)   Creating all objects for CPU
+Info: cpu: # 2018.08.23 22:19:22 (*)     Testbench
+Info: cpu: # 2018.08.23 22:19:23 (*)     Instruction decoding
+Info: cpu: # 2018.08.23 22:19:23 (*)       Instruction fields
+Info: cpu: # 2018.08.23 22:19:23 (*)       Instruction decodes
+Info: cpu: # 2018.08.23 22:19:25 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2018.08.23 22:19:25 (*)       Instruction controls
+Info: cpu: # 2018.08.23 22:19:25 (*)     Pipeline frontend
+Info: cpu: # 2018.08.23 22:19:25 (*)     Pipeline backend
+Info: cpu: # 2018.08.23 22:19:32 (*)   Generating RTL from CPU objects
+Info: cpu: # 2018.08.23 22:19:39 (*)   Creating encrypted RTL
+Info: cpu: # 2018.08.23 22:19:42 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'kernel_cpu_cpu'
+Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
+Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
+Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
+Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
+Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_008: "mm_interconnect_0" instantiated altera_merlin_router "router_008"
+Info: cpu_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "cpu_data_master_limiter"
+Info: Reusing file C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: sdram_ctrl_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "sdram_ctrl_s1_burst_adapter"
+Info: Reusing file C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: sdram_ctrl_s1_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "sdram_ctrl_s1_rsp_width_adapter"
+Info: Reusing file C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/Administrator/Desktop/nios/hello_world/nios_core/kernel/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: kernel: Done "kernel" with 33 modules, 63 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

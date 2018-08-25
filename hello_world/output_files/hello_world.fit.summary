@@ -1,0 +1,20 @@
+Fitter Status : Successful - Sun Aug 12 11:32:57 2018
+Quartus II 64-Bit Version : 14.1.0 Build 186 12/03/2014 SJ Full Version
+Revision Name : hello_world
+Top-level Entity Name : hello_world
+Family : Cyclone IV GX
+Device : EP4CGX150DF27C7
+Timing Models : Final
+Total logic elements : 3,604 / 149,760 ( 2 % )
+    Total combinational functions : 3,230 / 149,760 ( 2 % )
+    Dedicated logic registers : 2,143 / 149,760 ( 1 % )
+Total registers : 2143
+Total pins : 8 / 426 ( 2 % )
+Total virtual pins : 0
+Total memory bits : 727,296 / 6,635,520 ( 11 % )
+Embedded Multiplier 9-bit elements : 6 / 720 ( < 1 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 1 / 8 ( 13 % )
